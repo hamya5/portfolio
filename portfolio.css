@@ -1,0 +1,21 @@
+html {
+	font-size: 10px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	font-size: 2rem;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Trebuchet MS';
+}
+
+.nav-buttons {
+	display: flex;
+	gap: 10px;
+}
