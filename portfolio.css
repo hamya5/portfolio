@@ -7,6 +7,9 @@ html {
 	box-sizing: border-box;
 }
 
+
+/* --- NAVBAR -------------------- */
+
 nav {
 	height: 40px;
 	background-color: #214aa1;
@@ -28,6 +31,8 @@ a {
 }
 
 
+/* --- HEADER ---------------------- */
+
 header {
 	display: flex;
 	flex-wrap: wrap;
@@ -39,7 +44,7 @@ header {
 	height: 400px;
 }
 
-img {
+.tardi-image {
 	height: 150px;
 }
 .header-text {
@@ -56,6 +61,8 @@ img {
 }
 
 
+/* --- ABOUT --------------------- */
+
 .about {
 	display: flex;
 	flex-wrap: wrap;
@@ -68,6 +75,7 @@ img {
 }
 
 .profile-pic {
+	height: 150px;
 	border-radius: 50px;
 }
 
@@ -77,13 +85,64 @@ img {
 	
 	max-width: 500px;
 }
-.about-text p {
+
+
+/* --- PORTFOLIO ------------------- */
+
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+/*	justify-content: center;*/
 	
+	
+	height: 800px;
+	background-color: #345b9f;
+	color: #a55031;
+	font-size: 2rem;
+	
+
 }
 
+.projects {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+}
 
+.project {
+	display: flex;
+/*	flex-direction: column;*/
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	align-items: center;
+	
+	border: 2px solid #a55031;
+	padding: 40px;
+}
 
+.portfolio-links {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: right;
+	gap: 20px;
+	align-items: center;
+}
 
+.project-image {
+	height: 80px;
+	width: 150px;
+	border: 2px solid #a55031;
+}
+
+.project-text {
+	width: 450px;
+}
 
 
 
