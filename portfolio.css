@@ -1,5 +1,6 @@
 html {
 	font-size: 10px;
+	font-family: 'Trebuchet MS';
 }
 
 * {
@@ -7,7 +8,7 @@ html {
 }
 
 nav {
-	height: 4rem;
+	height: 40px;
 	background-color: #214aa1;
 
 }
@@ -23,7 +24,33 @@ nav {
 
 a {
 	text-decoration: none;
-	font-family: 'Trebuchet MS';
+	color: #a55031;
+}
+
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+	
+	background-color: #26315f;
+	height: 400px;
+}
+
+img {
+	height: 150px;
+}
+.header-text {
 	color: #a55031;
 	
+}
+
+.hello {
+	font-size: 4rem;
+}
+
+.intro-text, .peruse {
+	font-size: 3rem;
 }
