@@ -7,6 +7,10 @@ html {
 	box-sizing: border-box;
 }
 
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
 
 /* --- NAVBAR -------------------- */
 
@@ -80,7 +84,7 @@ header {
 }
 
 .about-text {
-	color: #a55031;
+	color: #a34d33;
 	font-size: 2rem;
 	
 	max-width: 500px;
@@ -90,17 +94,18 @@ header {
 /* --- PORTFOLIO ------------------- */
 
 .portfolio {
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-/*	justify-content: center;*/
+	justify-content: center;
+*/
 	
-	
-	height: 800px;
+	height: 1000px;
 	background-color: #345b9f;
 	color: #a55031;
 	font-size: 2rem;
-	
+		
+	padding: 20px;
 
 }
 
@@ -111,6 +116,8 @@ header {
 	justify-content: center;
 	gap: 20px;
 	align-items: center;
+	
+/*	max-width: 600px;*/
 }
 
 .project {
@@ -145,11 +152,40 @@ header {
 }
 
 
+/* --- CONTACT ------------------------*/
+
+.contact {
+	display: flex;
+/*	flex-direction: column;*/
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+	
+	padding: 20px;
+	
+	height: 250px;
+	background-color: #9f4b30;
+	color: #643f7c;
+	font-size: 2rem;
+}
+
+.contact-text {
+	max-width: 400px;
+	
+}
 
 
+/* --- FOOTER --------------------------*/
 
-
-
+footer {
+	height: 40px;
+	background-color: #184e96;
+	padding: 10px;
+	
+	font-size: 2rem;
+	color: #a75837;
+}
 
 
 
