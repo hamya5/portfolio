@@ -20,6 +20,9 @@ main {
 /* --- NAVBAR -------------------- */
 
 nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	height: 40px;
 	background-color: #214aa1;
 
@@ -34,7 +37,7 @@ nav {
 	font-size: 2rem;
 }
 
-a {
+nav a {
 	text-decoration: none;
 	color: #a55031;
 }
@@ -50,7 +53,9 @@ header {
 	align-items: center;
 	
 	background-color: #26315f;
-	height: 20%;
+	height: 100%;
+	
+	padding-top: 40px;
 }
 
 .tardi-image {
@@ -59,16 +64,23 @@ header {
 .header-text {
 	color: #a55031;
 	max-width: 500px;
-}
-
-.hello {
-	font-size: 4rem;
-}
-
-.intro-text, .peruse {
+	
 	font-size: 3rem;
 }
 
+h1 {
+	font-size: 4rem;
+}
+
+
+/*.hello {
+	font-size: 4rem;
+}*/
+/*
+.intro-text, .peruse {
+	font-size: 3rem;
+}
+*/
 
 /* --- ABOUT --------------------- */
 
@@ -199,4 +211,57 @@ footer {
 }
 
 
+/* --- RESPONSIVENESS ---------------------*/
+/*
+@media screen and (max-width: 800px) {
+
+	nav {
+
+	}
+
+	header {
+		flex-direction: column;
+
+	}
+
+	.about {
+		flex-direction: column;
+	}
+
+	.portfolio {
+
+	}
+
+	.contact {
+
+	}
+
+	footer {
+
+	}
+
+}
+
+*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
