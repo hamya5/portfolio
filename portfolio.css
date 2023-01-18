@@ -13,10 +13,14 @@ h1, h2, h3, h4 {
 
 a {
 	text-decoration: none;
-	color: #a55031;
 	font-weight: bold;
+	text-shadow: 0 0 2px #26315f;
+	
 }
 
+a, header, .about, .portfolio, footer {
+	color: #9a4a32;
+}
 
 
 /* --- NAVBAR -------------------- */
@@ -41,7 +45,6 @@ nav {
 }
 
 
-
 /* --- HEADER ---------------------- */
 
 header {
@@ -59,17 +62,17 @@ header {
 
 .tardi-image {
 	height: 150px;
+	margin-right: 5px;
+	border-radius: 10px;
 }
 .header-text {
-	color: #a55031;
-	max-width: 500px;
+	max-width: 400px;
 	font-size: 3rem;
 }
 
 h1 {
 	font-size: 4rem;
 }
-
 
 
 /* --- ABOUT --------------------- */
@@ -82,7 +85,7 @@ h1 {
 	align-items: center;
 	
 	height: 100%;
-	background-color: #215ea5;
+	background-color: #20396a;
 	padding: 40px;
 
 	scroll-margin: 60px;
@@ -94,14 +97,11 @@ h1 {
 }
 
 .about-text {
-	color: #a34d33;
 	font-size: 2rem;
 	max-width: 500px;
 	
 	text-shadow: 0 0 2px #26315f;
 }
-
-
 
 
 /* --- PORTFOLIO ------------------- */
@@ -116,8 +116,7 @@ h1 {
 	height: 100%;
 	padding: 40px;
 
-	background-color: #2351a5;
-	color: #a55031;
+	background-color: #27457e;
 	font-size: 2rem;
 	
 	scroll-margin: 60px;
@@ -132,7 +131,7 @@ h1 {
 	margin: 0 auto;
 }
 
-.projects {
+.projects-container {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -150,8 +149,8 @@ h1 {
 	gap: 30px;
 	align-items: center;
 	
-	width: 80%;
-	border: 2px solid #a55031;
+	width: 90%;
+	border: 2px solid #9a4a32;
 	
 	max-width: 800px;
 	padding: 20px;
@@ -173,8 +172,7 @@ h1 {
 }
 
 .project-image {
-	height: 80px;
-	width: 150px;
+	height: 90px;
 	border: 2px solid #a55031;
 	margin-top: 10px;
 }
@@ -196,9 +194,9 @@ h1 {
 	width: 100%;
 	height: 100%;
 	padding: 40px;
-	
-	background-color: #9f4b30;
-	color: #643f7c;
+
+	background-color: #9a4a32;
+	color: #5d3c7f;
 	font-size: 2rem;
 	
 	scroll-margin: 60px;
@@ -206,7 +204,6 @@ h1 {
 
 .contact-text {
 	max-width: 400px;
-	
 }
 
 
@@ -219,7 +216,6 @@ footer {
 	
 	font-size: 2rem;
 	margin: auto 0;
-	color: #a75837;
 }
 
 
@@ -271,7 +267,6 @@ footer {
 	}
 
 }
-
 
 	
 @media screen and (max-width: 500px) {
