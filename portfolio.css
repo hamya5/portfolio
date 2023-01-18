@@ -14,6 +14,7 @@ h1, h2, h3, h4 {
 a {
 	text-decoration: none;
 	color: #a55031;
+	font-weight: bold;
 }
 
 
@@ -96,7 +97,11 @@ h1 {
 	color: #a34d33;
 	font-size: 2rem;
 	max-width: 500px;
+	
+	text-shadow: 0 0 2px #26315f;
 }
+
+
 
 
 /* --- PORTFOLIO ------------------- */
@@ -116,6 +121,9 @@ h1 {
 	font-size: 2rem;
 	
 	scroll-margin: 60px;
+	
+	text-shadow: 0 0 2px #26315f;
+	
 }
 
 .portfolio-intro {
@@ -198,6 +206,7 @@ h1 {
 
 .contact-text {
 	max-width: 400px;
+	
 }
 
 
