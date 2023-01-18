@@ -11,15 +11,16 @@ h1, h2, h3, h4 {
 	margin: 0;
 }
 
-main {
+a {
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: 0 0 2px #26315f;
 	
 }
 
-a {
-	text-decoration: none;
-	color: #a55031;
+a, header, .about, .portfolio, footer {
+	color: #9a4a32;
 }
-
 
 
 /* --- NAVBAR -------------------- */
@@ -28,24 +29,20 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 40px;
+	height: 60px;
 	background-color: #214aa1;
 	
 	display: flex;
 	align-items: center;
-
 }
 
 .nav-buttons {
 	display: flex;
-	
 	gap: 20px;
 	
 	margin: auto 20px;
-/*	padding: 20px; /* change this to vertically centre buttons */
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
-
 
 
 /* --- HEADER ---------------------- */
@@ -59,26 +56,23 @@ header {
 	
 	background-color: #26315f;
 	height: 100%;
-	
-	padding: 40px;
-	
-	margin-top: 40px;
+	padding: 40px;	
+	margin-top: 60px;
 }
 
 .tardi-image {
 	height: 150px;
+	margin-right: 5px;
+	border-radius: 10px;
 }
 .header-text {
-	color: #a55031;
-	max-width: 500px;
-	
+	max-width: 400px;
 	font-size: 3rem;
 }
 
 h1 {
 	font-size: 4rem;
 }
-
 
 
 /* --- ABOUT --------------------- */
@@ -91,9 +85,10 @@ h1 {
 	align-items: center;
 	
 	height: 100%;
-	background-color: #3174ab;
-	
+	background-color: #20396a;
 	padding: 40px;
+
+	scroll-margin: 60px;
 }
 
 .profile-pic {
@@ -102,10 +97,10 @@ h1 {
 }
 
 .about-text {
-	color: #a34d33;
 	font-size: 2rem;
-	
 	max-width: 500px;
+	
+	text-shadow: 0 0 2px #26315f;
 }
 
 
@@ -116,53 +111,53 @@ h1 {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-/*	align-content: center;*/
 	
+	width: 100%;
 	height: 100%;
 	padding: 40px;
 
-	background-color: #345b9f;
-	color: #a55031;
+	background-color: #27457e;
 	font-size: 2rem;
-
+	
+	scroll-margin: 60px;
+	
+	text-shadow: 0 0 2px #26315f;
+	
 }
 
 .portfolio-intro {
-	width: 60%;
+	min-width: 300px;
+	max-width: 500px;
 	margin: 0 auto;
 }
 
-.projects {
+.projects-container {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-/*	justify-content: center;*/
 	gap: 20px;
 	align-items: center;
 	
 	padding: 40px;
-	
-
+	width: 100%;
 }
 
 .project {
 	display: flex;
-/*	flex-direction: column;*/
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 	gap: 30px;
 	align-items: center;
 	
-	width: 80%;
-	border: 2px solid #a55031;
+	width: 90%;
+	border: 2px solid #9a4a32;
+	border-radius: 10px;
 	
 	max-width: 800px;
-	
 	padding: 20px;
-
 }
 
-.portfolio-links {
+.project-links {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -178,9 +173,9 @@ h1 {
 }
 
 .project-image {
-	height: 80px;
-	width: 150px;
+	height: 90px;
 	border: 2px solid #a55031;
+	border-radius: 10px;
 	margin-top: 10px;
 }
 
@@ -193,7 +188,6 @@ h1 {
 
 .contact {
 	display: flex;
-/*	flex-direction: column;*/
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 20px;
@@ -202,31 +196,28 @@ h1 {
 	width: 100%;
 	height: 100%;
 	padding: 40px;
-	
-	height: 250px;
-	background-color: #9f4b30;
-	color: #643f7c;
+
+	background-color: #9a4a32;
+	color: #5d3c7f;
 	font-size: 2rem;
+	
+	scroll-margin: 60px;
 }
 
 .contact-text {
 	max-width: 400px;
-	
 }
 
-.contact-logos {
-/*	padding: 10px;*/
-}
 
 /* --- FOOTER --------------------------*/
 
 footer {
-	height: 40px;
+	height: 50px;
 	background-color: #184e96;
 	padding: 10px;
 	
 	font-size: 2rem;
-	color: #a75837;
+	margin: auto 0;
 }
 
 
@@ -236,7 +227,6 @@ footer {
 
 	nav {
 		justify-content: space-evenly;
-	
 	}
 
 	header {
@@ -260,7 +250,14 @@ footer {
 	.project {
 		flex-direction: column;
 		gap: 10px;
-		padding: 20px;
+	}
+	
+	.project-text {
+		width: 80%;
+	}
+	
+	.project-links {
+		flex-direction: row;
 	}
 	
 	.contact {
@@ -271,15 +268,26 @@ footer {
 		display: none;
 	}
 
-	footer {
-
-	}
-
 }
 
+	
+@media screen and (max-width: 500px) {
+	
+	.tardi-image {
+		margin: 20px auto;
+	}
+	
+	.projects {
+		padding: 10px;
+	}
+	
+	.project {
+		width: 100%;
+	}
+	
+}
+	
 
-	
-	
 	
 	
 	
