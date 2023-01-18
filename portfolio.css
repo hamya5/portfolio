@@ -28,7 +28,7 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 40px;
+	height: 60px;
 	background-color: #214aa1;
 	
 	display: flex;
@@ -43,7 +43,7 @@ nav {
 	
 	margin: auto 20px;
 /*	padding: 20px; /* change this to vertically centre buttons */
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 
@@ -62,7 +62,8 @@ header {
 	
 	padding: 40px;
 	
-	margin-top: 40px;
+	margin-top: 60px;
+	
 }
 
 .tardi-image {
@@ -94,6 +95,8 @@ h1 {
 	background-color: #3174ab;
 	
 	padding: 40px;
+	
+	scroll-margin: 60px;
 }
 
 .profile-pic {
@@ -125,7 +128,9 @@ h1 {
 	background-color: #345b9f;
 	color: #a55031;
 	font-size: 2rem;
-
+	
+	scroll-margin: 60px;
+	
 }
 
 .portfolio-intro {
@@ -150,7 +155,7 @@ h1 {
 .project {
 	display: flex;
 /*	flex-direction: column;*/
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 	gap: 30px;
 	align-items: center;
@@ -209,6 +214,9 @@ h1 {
 	background-color: #9f4b30;
 	color: #643f7c;
 	font-size: 2rem;
+	
+	scroll-margin: 60px;
+	
 }
 
 .contact-text {
@@ -223,11 +231,12 @@ h1 {
 /* --- FOOTER --------------------------*/
 
 footer {
-	height: 40px;
+	height: 50px;
 	background-color: #184e96;
 	padding: 10px;
 	
 	font-size: 2rem;
+	margin: auto 0;
 	color: #a75837;
 }
 
@@ -293,7 +302,35 @@ footer {
 
 
 	
+@media screen and (max-width: 500px) {
 	
+	.tardi-image {
+		margin: 20px auto;
+	}
+	
+	
+	
+	.projects {
+		padding: 10px;
+	}
+	
+	.project {
+		width: 100%;
+	}
+	
+	
+	/*.contact-logos > img {
+		width: 50px;
+		height: 50px;
+	}*/
+	
+	/*.email {
+		height: 100px;
+		width: 100px;
+	}*/
+}
+	
+
 	
 	
 	
